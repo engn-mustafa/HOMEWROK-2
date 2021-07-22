@@ -1,0 +1,108 @@
+:root{
+    --bkorange: rgb(219, 113, 14);
+    --Frmblue: rgba(15, 147, 199, 0.842);
+    --planebk:linear-gradient(to right, #cbd1d4 10%, #a1a1a1 90%);
+    --bkGrey: rgba(216, 171, 171, 0.644);
+}
+*{
+    margin:10px;
+}
+body{
+    display: block;
+    background-color: var(--planebk);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin: 60px;
+    /*border: var(--Frmblue) solid 10px;*/
+}
+header{
+    border: solid 10px orange;
+}
+.Main-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+#h1head{
+    font-size: 250%;
+}
+nav{
+    display: block;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+#Mustafa-photo{
+    display: block;
+    height: auto; 
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#my-work{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*.My-Work{
+    border: 5px solid var(--bkorange);
+}*/
+.My-Work div{
+    border: solid var(--Frmblue) 5px ;
+}
+.work-pics{
+    margin-left: 100px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.My-Work img{
+    display: block;
+    width: 250px;
+    height: auto;
+}
+#First-App img{
+    height: 350px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.App-name{
+    position: relative;
+    margin: 0rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border: solid var(--Frmblue) 3px ;
+    background: var(--Frmblue);
+}
+.App-name:hover{
+    border:solid var(--bkorange);
+}
+.My-Work div:hover{
+    border:solid var(--bkorange);
+}
+.App-name h3{
+    margin-left: 10px;
+    margin-right: auto;
+}
+footer{
+    display: flexbox;
+    flex-direction: inherit;
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        width: 50%;
+        background:var(--bkGrey);
+    }
+}
